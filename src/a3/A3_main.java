@@ -9,8 +9,9 @@ public class A3_main {
 	 * Start des Deklarationsbereichs. Achten Sie unbedingt darauf, dass vor jeder
 	 * Variablendeklaration das Schluesselwort static steht.
 	 */
-
-	
+		static int[] numbers; 
+		static int max;
+		static int minIndex;
 	
 	/*
 	 * Ende des Deklarationsbereichs.
@@ -20,7 +21,14 @@ public class A3_main {
 		/*
 		 * Start des algorithmischen Bereichs.
 		 */
-
+			max = numbers[0] ;
+			minIndex = 0;
+			for(int i = 1; i <numbers.length; i++) {
+				if(numbers[i]> max) {
+					max = numbers[i];
+					minIndex = i;
+				}
+			}
 		
 		
 		/*

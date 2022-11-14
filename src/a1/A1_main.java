@@ -9,7 +9,7 @@ public class A1_main {
 	 * Start des Deklarationsbereichs. Achten Sie unbedingt darauf, dass vor jeder
 	 * Variablendeklaration das Schluesselwort static steht.
 	 */
-
+		static int[] myArray; 
 	
 	
 	/*
@@ -20,7 +20,12 @@ public class A1_main {
 		/*
 		 * Start des algorithmischen Bereichs.
 		 */
-
+		
+		for(int i = 0; i <myArray.length/2; i++) {
+			int temp = myArray[i];
+			myArray[i]= myArray[myArray.length-1-i];  
+			myArray[myArray.length-1-i] = temp;
+		}
 		
 		
 		

@@ -5,8 +5,8 @@ public class A2_main {
 	 * Start des Deklarationsbereichs. Achten Sie unbedingt darauf, dass vor jeder
 	 * Variablendeklaration das Schluesselwort static steht.
 	 */
-
-	
+		static int[] numbers; 
+		static int d;
 	
 	/*
 	 * Ende des Deklarationsbereichs.
@@ -16,7 +16,13 @@ public class A2_main {
 		/*
 		 * Start des algorithmischen Bereichs.
 		 */
-
+		d = 0;
+		
+		for (int i = 0; i < numbers.length; i++) {
+			d = d + numbers[i]; 
+		}
+		
+		d = (d/numbers.length);
 		
 		
 		/*
